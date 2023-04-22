@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://pixelz.cc/wp-content/uploads/2019/01/formula-1-logo-uhd-4k-wallpaper.jpg);
+    background-size: auto;
+    background-position: center 200px;
+}
+
+.top{
+    background-color: rgb(235, 235, 235);
+    height: 100px; 
+}
+
+.fia{
+    width: 6%;
+    margin-left: 10%;
+}
+
+.f1{
+    width: 7.5%;
+    margin-top: 1%;
+    margin-left: 66%;
+
+}
+
+.titulo{
+    font-size: 45px;
+    text-align: center;
+    margin-top: -3.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table1{
+    margin: auto;
+    margin-top: 0.5%;
+    margin-left: 25%;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: rgb(235, 235, 235);
+    border-collapse: collapse;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.mercedes{
+    width: 200px;
+}
+
+.ferrari{
+    width: 150px;
+}
+
+.bandeira{
+    width: 25px;
+}
+
+.selfie{
+    width: 120px;
+    height: 90px;
+}
+
+.mclaren{
+    width: 150px;
+}
+
+.hass{
+    width: 100px;
+}
+
+.alfa{
+    width: 100px;
+}
+
+.alpine{
+    width: 100px;
+}
+
+.alpha{
+    width: 100px;
+}
+
+.williams{
+    width: 130px;
+}
+
+.red{
+    width: 100px;
+}
+
+.table2{
+    margin: auto;
+    margin-top: -500px;
+    margin-left: 400px;
+    border: 5px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    background-color: rgb(235, 235, 235);
+    width: 350px;
+    font-weight: bold;
+}
+
+.table3{
+    margin: auto;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: 5px solid rgb(28, 3, 255);
+    border-collapse: collapse;
+    background-color: rgb(235, 235, 235);
+    width: 350px;
+    height: 500px; 
+    font-weight: bold;
+}
+
+.sis{
+    font-size: larger;
+}
+
+.table4{
+    margin: auto;
+    position: relative;
+    margin-top: -1053px;
+    margin-left: 830px;
+    border: 5px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    background-color: rgb(235, 235, 235);
+    width: 350px;
+    font-weight: bold;
+}
+
+.table5{
+    margin: auto;
+    position: relative;
+    margin-top: -1053px;
+    margin-left: 1260px;
+    border: 5px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    background-color: rgb(235, 235, 235);
+    width: 350px;
+    font-weight: bold;
+}
+
+.rbr{
+    width: 80px;
+}
+
+.meca{
+    position: relative;
+    width: 130px;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.merc{
+    position: relative;
+    top: -15px;
+}
+
+.pilotos{
+    position: relative;
+    text-align: center;
+    top: -15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.aston{
+    width: 150px;
+}
+
+.astonn{
+    position: relative;
+    width: 95px;
+    top: 10px;
+}
+
+.asto{
+    position: relative;
+    text-align: center;
+    top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+}
+
+.ferr{
+    position: relative;
+    width: 95px;
+    padding-top: 10px;
+}
+
+.fer{
+    position: relative;
+    text-align: center;
+    top: 5px;
+    padding-bottom: 10px;
+}
+
+.alf{
+    position: relative;
+    width: 60px;
+    padding-top: 4px;
+}
+
+.alff{
+    position: relative;
+    text-align: center;
+    top: 5px;
+    padding-bottom: 5px;
+}
+
+.alp{
+    position: relative;
+    width: 65px;
+    padding-top: 5px;
+}
+
+.alpi{
+    position: relative;
+    text-align: center;
+    top: 5px;
+    padding-bottom: 10px;
+}
+
+.ha{
+    position: relative;
+    width: 80px;
+    top: -8px;
+}
+
+.has{
+    position: relative;
+    text-align: center;
+    top: -10px;
+}
+
+.will{
+    position: relative;
+    width: 65px;
+    padding-top: 5px;
+}
+
+.willi{
+    position: relative;
+    text-align: center;
+    top: 8px;
+    padding-bottom: 26px;
+}
+
+.mc{
+    width: 150px;
+}
+
+.mcc{
+    position: relative;
+    text-align: center;
+    top: 8px;
+    padding-bottom: 18px;
+}
+
+.al{
+    position: relative;
+    width: 70px;
+    top: 8px;
+    padding-bottom: 17px;
+}
+
+.all{
+    position: relative;
+    text-align: center;
+    bottom: 5px;
+}
+
+.gp{
+    position: relative;
+    text-align: center;
+    top: 8px;
+    padding-bottom: 15px;
+    color: rgb(28, 3, 255);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

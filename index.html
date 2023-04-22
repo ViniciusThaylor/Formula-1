@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formula 1</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="top">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/2/2a/Logotipo_da_Federation_Internationale_de_l%27Automobile.svg/1200px-Logotipo_da_Federation_Internationale_de_l%27Automobile.svg.png"
+            class="fia">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/F1_logo.svg/2560px-F1_logo.svg.png"
+            class="f1">
+
+        <h1 class="titulo">Campeonato Mundial de Fórmula 1 2023 - FIA</h1>
+    </div>
+
+    <table class="table1" border="1">
+        <tr align="center">
+            <th colspan="2">MERCEDES</th>
+            <td colspan="2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mercedes_AMG_Petronas_F1_Logo.svg/2560px-Mercedes_AMG_Petronas_F1_Logo.svg.png"
+                    class="mercedes">
+            </td>
+
+            <th colspan="2">FERRARI</th>
+            <td colspan="2">
+                <img src="https://logos-world.net/wp-content/uploads/2020/07/Ferrari-Scuderia-Logo.png" class="ferrari">
+            </td>
+        </tr>
+
+        <tr align="center">
+            <td>Lewis Hamilton
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAACZCAMAAADXexy/AAAAYFBMVEXIEC7///8BIWnTQVnYV2z43+PPMErut8Djh5b99/j7/P2Rn74PLXELKm+AkLT4+fvm6fBfc6BOZJbAyNotR4MnQn+4wdXKGDX77/Hgd4jNJUDrp7LcZ3rnl6Tzy9H00dc6gwdOAAAEvElEQVR4nO2d6XLbMAyE6Tp3r1xtjrbJ+79lx4pVKxZEEcAumM5gf2WimORH7lqKRJHl5HSzrKvPXz5BdChyW2raHv4QU/HXb9/35T0+zas7Oy/l4eKy0gPXN5Bm9OK/vR6L+/U8q2xH/tYLlQ7Y3N0D2tGH/8fPsbBXodrB+ZMfl4QIQQ/+NesPhyZWWJY/BB34V60/5WeHIJy/wfrv+bkhCOZvsv4xPzMEsfxt1p/xE0MQyX+w/kvV+gI/LQRx/O3WF/lJIQjjV1hf5ueEIIhfZf03/vrpQZApBCH8Suu/8bcaZSJDCCL4b5TWH/kVvTVKHQI+f+sFj8Cv/MhO2hCw+S3Wn/DTQ0Dm137rT/ivbP220YWAyn9/N35G7+NizM3w4fYQEPnN1h+GsHjM0x4CHr+z9cXdg1353e4tmGL68AMGruyLIoeAwo9o88hPDgGBH+PZgi4wiB81XGVaKC8EaH5YS9/x80KA5Qc6tfCKZvFDB+mYnxQCID+2fXN+Sghg/Gh/CvyMEID48UMj8uNDgOEnRHOBH93TCH7KV/MSP7g6Pz/p1LzMD7Wbm591aVbjB/a5k593aV7lx1Xs4mf+a7bCjzKeh5/6r/kqP6b37fzkWzPr/JAmWPnpt+Za+AEWNPLzb8228bvHwcQfcWu+kd/bGAN/wF1pDb/PjAb+gKcSOn5XCPT8e5EfzWr4XSGw8dMfzev4XSEw8POnZmj53SFQ8EdMzVHze0PQzB8wK8XG7wtBM3/ArCQrvycEzfyzY5SpmaVSJkXa8x9ZyR+s5E/+5E/+5E/+5O/Pvw3WQ5X/Ibo51dakUqlUKpVKpVKpVCqVSqVSqVQqlUqlUqnU/6ToB64f7flv9AP3j/b8P7rC5E/+5E/+5E/+5E/+3vzO938knZ7MuA4H7fznZ/O///24P2h+/8fyodvrSjMvL+aX+M8IfrnkP+MCtmHvfx3e/1OPko9fdFbZvoxHQ97/U1t/0kA3Pz4E9vd/BdUNCuFHh8D6/rd6bFD84BDY3v/XNwvIDw2Baf0HQSu2NPA7amOs/+Cwvnf9D0moEKjXf7E1xsDv7XIkv8f6mPV/jPVC+AHjYOR3+w7AD2mClZ8eAsX6b4KaLWjnJ4egef0/X+97+KkhaFz/0Vuxi58Zgrb1PwXpjOfk54WgZf1XQJ+7+VkhWF//F1Kdn58UgtX1nwUZ7Ibgp4RgZf1vVE9j+AkhqK7/jqqEsv47Zmhq6/8Lsn7TwvjR7Vve/wHTv3h+rD+X9v8AFM3ihw7Swv4vglxX2lh+YEvF/X/cvUrnhzlV2P/JV2AQP2q45vt/CfLfaSHwY9p8vP+bpy+j+RGeLZhi+vADBq5E3GSM2f/R1PoScZM5aP9PSWvuLVeOD7c2MWz/V/0QVua/IJ+0Uvk9IVjmhz5pJ/PbQ7DED55pweY3nwlkfvhMGz7/dP93BZHIj59pFcFvCoHAj59kFMRvCcGMnzHJLIzfcCZo6CP3JMNAfnUIVg77rR/Mrw3Bij381g/n14VguWd2Ali/A78mBOIvx9YgrN+DXxEC0RSDQNbvw98cguP++CeU9XvxN4Zgw7Z+N/62ENCtP6gPf0sIJOs/Ia0/qBf/agj+AoTe43JUadxpAAAAAElFTkSuQmCC"
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/rpm/players/full/868.png" class="selfie">
+            </td>
+
+            <td>George Russel
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAACZCAMAAADXexy/AAAAYFBMVEXIEC7///8BIWnTQVnYV2z43+PPMErut8Djh5b99/j7/P2Rn74PLXELKm+AkLT4+fvm6fBfc6BOZJbAyNotR4MnQn+4wdXKGDX77/Hgd4jNJUDrp7LcZ3rnl6Tzy9H00dc6gwdOAAAEvElEQVR4nO2d6XLbMAyE6Tp3r1xtjrbJ+79lx4pVKxZEEcAumM5gf2WimORH7lqKRJHl5HSzrKvPXz5BdChyW2raHv4QU/HXb9/35T0+zas7Oy/l4eKy0gPXN5Bm9OK/vR6L+/U8q2xH/tYLlQ7Y3N0D2tGH/8fPsbBXodrB+ZMfl4QIQQ/+NesPhyZWWJY/BB34V60/5WeHIJy/wfrv+bkhCOZvsv4xPzMEsfxt1p/xE0MQyX+w/kvV+gI/LQRx/O3WF/lJIQjjV1hf5ueEIIhfZf03/vrpQZApBCH8Suu/8bcaZSJDCCL4b5TWH/kVvTVKHQI+f+sFj8Cv/MhO2hCw+S3Wn/DTQ0Dm137rT/ivbP220YWAyn9/N35G7+NizM3w4fYQEPnN1h+GsHjM0x4CHr+z9cXdg1353e4tmGL68AMGruyLIoeAwo9o88hPDgGBH+PZgi4wiB81XGVaKC8EaH5YS9/x80KA5Qc6tfCKZvFDB+mYnxQCID+2fXN+Sghg/Gh/CvyMEID48UMj8uNDgOEnRHOBH93TCH7KV/MSP7g6Pz/p1LzMD7Wbm591aVbjB/a5k593aV7lx1Xs4mf+a7bCjzKeh5/6r/kqP6b37fzkWzPr/JAmWPnpt+Za+AEWNPLzb8228bvHwcQfcWu+kd/bGAN/wF1pDb/PjAb+gKcSOn5XCPT8e5EfzWr4XSGw8dMfzev4XSEw8POnZmj53SFQ8EdMzVHze0PQzB8wK8XG7wtBM3/ArCQrvycEzfyzY5SpmaVSJkXa8x9ZyR+s5E/+5E/+5E/+5O/Pvw3WQ5X/Ibo51dakUqlUKpVKpVKpVCqVSqVSqVQqlUqlUqnU/6ToB64f7flv9AP3j/b8P7rC5E/+5E/+5E/+5E/+3vzO938knZ7MuA4H7fznZ/O///24P2h+/8fyodvrSjMvL+aX+M8IfrnkP+MCtmHvfx3e/1OPko9fdFbZvoxHQ97/U1t/0kA3Pz4E9vd/BdUNCuFHh8D6/rd6bFD84BDY3v/XNwvIDw2Baf0HQSu2NPA7amOs/+Cwvnf9D0moEKjXf7E1xsDv7XIkv8f6mPV/jPVC+AHjYOR3+w7AD2mClZ8eAsX6b4KaLWjnJ4egef0/X+97+KkhaFz/0Vuxi58Zgrb1PwXpjOfk54WgZf1XQJ+7+VkhWF//F1Kdn58UgtX1nwUZ7Ibgp4RgZf1vVE9j+AkhqK7/jqqEsv47Zmhq6/8Lsn7TwvjR7Vve/wHTv3h+rD+X9v8AFM3ihw7Swv4vglxX2lh+YEvF/X/cvUrnhzlV2P/JV2AQP2q45vt/CfLfaSHwY9p8vP+bpy+j+RGeLZhi+vADBq5E3GSM2f/R1PoScZM5aP9PSWvuLVeOD7c2MWz/V/0QVua/IJ+0Uvk9IVjmhz5pJ/PbQ7DED55pweY3nwlkfvhMGz7/dP93BZHIj59pFcFvCoHAj59kFMRvCcGMnzHJLIzfcCZo6CP3JMNAfnUIVg77rR/Mrw3Bij381g/n14VguWd2Ali/A78mBOIvx9YgrN+DXxEC0RSDQNbvw98cguP++CeU9XvxN4Zgw7Z+N/62ENCtP6gPf0sIJOs/Ia0/qBf/agj+AoTe43JUadxpAAAAAElFTkSuQmCC"
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://sportsbase.io/images/gpfans/copy_380x388/cea506e8bc3c4a09a528df690f9234393b05139e.png"
+                    class="selfie">
+            </td>
+
+            <td>Carlos Sainz
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAACRlBMVEXGCx7+xAD/ywDGAB7RSxrVThuuFRjW1tT/xgD/yAD/wwDLvgCkggivAButCRn8xQC0WA+kZQuynAC+vrykAACeYQzNuAC9wsPDw7+wABjKtQCuDBDVpizSnwCfAADCpQDhvW6mdQueWA+ojgOoewrFoQDMpQDptgC0lgC6pwDDtwDzvQaumQDIqwDdpwDOtXimSkvQ2NTX2d/UvInotS+tPxWtNRa4bxOZABWuAACdUQ/lugW3qwdsb5CemzcnW6D1wiqqkTurnUCfkEy5poDVqFXdvnWgkHw8YJnetk65oGzpv2vHpWqqlC+2mCCmlSO9nTvIspfds3C9rn3Orlyqkl6lm2GspJSwqYSdlXLDrJLJxrrmvDvLfBWaigquolLamQOsOxW3bBLawGK9nVWebiOgKhelioSmVxWeORmYPACSbwq1jAifIxSgIwC/rLCTRBW2hoarVVuea0mrNTOXjQC2pjuGcQN9kjNOgVJhiT27rlfHsTKcnSO2smitaDqMHhZ+Ugh4KQpwDBV+RAxtaRRoZhuAIxN7ZRZxTwjHgQ2KVy6Himyyk6Oxc1mpbnm2ZofpZ57KcnnNVIl/ZWTQbZvIrL2DdQjHiaD3aqynnKOvZoSteY9ubn4AMP8UMelLXbWpT0F+czo4T8CBclyTMjejuq+tf25ra61JUdaBHkVJPYMAXMQhSJWfFUoAQ69SaZKMDS6kXFhzKlZZY2Vsb01hMGQAjnGIl7+prr98jby0ZUjHjlp8kLtRhXB6nYuNMUZLcmodcw3EAAAOLElEQVR4nO2dj1sT5x3AvVt3uTtz7x1JIDkCxuQ4LvFCIIEkF8QGhYpYf2CtglpTSPkVuBhpTW23bsVOZ5fVVuYo1K2dtbPt2rBa27Vip93+s73vBX/U9Hn2PCQ8Pej7CTlCyBnvk+/7fb/ve2/Cpk0YDAaDwWAwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoPBYMr4BeZxNj2BeZxNJOZxNhGYx8FOysFOysFOysFOysFOysFOysFOylkzJzzBGtt1yNo5YQmVWJ9S1tDJdk/zWv3ja8uaOIHthuWZ5i5ZhTfW4gnWlrWJE5anaYKXQwzL8OvPytrECY++djyZ7OAJml93KWVNnLBsdzev7tzVoxDd3esuTKrqxAgPnuU7trb2tj61u2/Pjv721r3PPPs0vA99ketET/WcwMRB890d3erWffslWfYf2CUdHJA8sl8aOKR0d2xX+XWipIpOWKZ/3zOH9+199khQgUmWVYJHg400TCiqvH/vvt7RrcefXidWqudEPfSsX5Kb5UEJCmFYXvUPHVBY1Jpo+dhAsyz5B453VO3Z1pLqOGEJpvvwflkhGPq5Y800QZOkqkgnDoZUhmR4Xtm1m6Zptdl//Dl2HfRCVYoTmt29U4YuaOa5ox6SD52MxmKpE893jkdPhnhSeXI3w9MEo1h7u9dB11wdJzyv7pVUGB2h4eGhYGGE4gCI5S3PxwHguFjaP/TUMFRDk7ad/etgBFQdJzT7wqhNVdIU4MS2ISs0Qrmpsed3jnMUvKtz14QbcFkhRMr+w1V5vrWlSvmE7x+1NQFogKJE32m4hRJqtwU1eMNNgektAN4FQDrob//ZtB1YkB32W9GBU5RmC4yjtuPzeaTJDEdxnHVbrWELTAZH+39GTojWninNOPCMZLVKUw6pvksb2xyYcnv907ovW9JlPfQz6ndYuvtAQAJTGvBubtKCtlO5U9Ya32m9c+ZF77ZMdhsMnWxmMmBrWAcptlo5FnY9aigf2OZtG/eOpABwHwGcFsgA8aUzblBz2tvZlgnU5z0qHBHRVXnGtaRq9QlBkLHpmlO5NjewWcc7JalG8kk1TRK83VUjJuzAZ9VCsIIhzF/fV+CERcdHq6UfeFSkNHuzNZI331lr6/JKtqAfXr1Sl5RJNTVJ2U6/QvJG6lmZZmIJk4ZMJXHCEwxDWBmaf9CXbA9K08GgzXbwYOB5j9c75n/5teDBYCAYtFqDLSpdChH4cEZpZEjerPm2Eics2ainz6Ybmx+83rziD3qG6l959VcthwNNXq/t16/95tVXW377sk1qZtgHDwo1+q2NIcWkSipywqS16amxqWkQYlbu4enhsfqXA10eWxAiSXBj67IFDgT8vodzkGrT677JWuGlglLh/32tqMhJzeybqYXUuYsFGuUGloZ5gg/mrWPn3/jdrIaANT7ITvm8UrCZLk3Cwb3U87Pnz587f/qNjeiEJ60XFs5e+L1OonzJMCT84psl6/S5Ny7OZrNZyuFwJBynoj6vVVbQLC3LGtOP6sKFhTcvXECaTElFTtTmN/9w3ndWQdmTHi6sEE/X1taM+Xydf+w7dmxo6PBQ797W+xitTPXD3c5ZVXXjOWEZf1cgEIBXmWZpRuAgItoASgQirNvaLBZLBF4sEYjFuNHAQJNBTyDQEvB0ba/eYVSViuLEH0B4oBOYJoTSEJDKZtG4B/7gbgtDKaXrW3bjVqQB5RObx9itawPmE5pVpaANXnSVWXECU6p4Np8yBoPQCdLggiZcl96+Pmix5yzhBuNEMqzl4G6NZh37VFTbk7oN4Uf1+kqcaFRm4TxYiROL5WrunfA7uctzc396yz5/yYgTgt0eRHvBrsikZX4FTmDPum/w+GDfYD9L3o+TTD51MX96IeVbiZPclcWIZebP83NXwu/O5cLICdzt+CDcb7BjQ8YJ2w7zpt25lbifT4A2Pa2lMucWsitxMrE4t+iyzM/NXba8u1jKJzzBwvZkcTpNe2Kjuk6os5I0HYCDG2u25CTsuvzeZahk7orrkusHTuyun4uTlBRcsOVTwbxm9Dsoxy5euQKbzlVLzmUJP+LEtTGd8Gw7jAS782kWDnFLbWchZYXV/tnUQnalL55wvTs3Nz//F4sldylcihOWcEXCFpezg/n/T/GTUFGOJdphJDidWxk4ljGcuLOp66lU6vrZ82Kp7Vj+ClNJDrYdGBqXjZqN5kkYJ+EwzCdmXa1T0VwB0w5f8FxuX0hRedJoO1Pvf3BBSv3tmm8lx7qu/tUJe5/5ucWw/TKKE0ZVlFDO7jRy7Mbrd2hSOfLOh2fSW6IjQjYqRJGTUzc/uJ7a/7ePfPfjxAIL2Nzi/JW5+cV3YUMbEwQwNekQaj68NdNAmnRudrVOeJ4MCb6CUOD09Ei8CVCcUdGPXN+xkJLe/zs6oVPKsVDEpffmUKCgmzfcejqqU1E9VtCp8QJhyrM9q3fSqImedEyPJnQwWdBQBQudZPNSKp9K5U+LQJvNzt6yw8zx4sfzufn3DCeWG4CSRV14oiB44pyQHkHVnulYddvhYyKIC+ClmYmro8MnTwrICfBN5/MLO66nJOmc5khoVMIxYZmA5cmlS5fnFg0np4STheHBwZlPPkzHm+Kizpgwz646TugCB6J94QjsVLcyDEOiHCvWwk7n0w/+AbdvuD9bKhY/1xJQSs7ucl29kkPj4gMkyZC0yxIJO+2vC2lNNeM89WqdMISiaacmUBK171Pgq436YnEsn89/+sFH+fy0+FnyWrGYXHJrLiPTXr6C2k6kgWZpPnQC1WzODzVNIM2YUCrIsWkuMWPUse+IcWaljo3FYmf++WVsfDbxxdGbxeLO5DeJiQiScvXPFktpTml7bIvdqGPPuLUQY8YlbqvOJwyrxktx4rqlRXm25IQDwI0mCrgv3/cEkn9vCS45bhnJtTS5hGq2YW2LK4Kc3IgOm/MUz6rjBF5IsjUCR3n2W+6sCp2giXoKbbLa7Javihe+Ln6xcLNItTldCGPrbCCYArdlMGKMixmTFvcVjgHRiEZzA00lGNu2Wrd3mxfUbm4CFx2fFW9eu558/1qR0hxbHAboWyMDczOsXOxovGPCZmNQiROSabfPZBOA0obhKy7X1XLeOi9XW5fiTo9vKRb3BI8Wi0uJDCxEBBBPwy3FNdK0KojA7WibgHFixoZDVOSEVIczIOGm3FMhBrYkT33JSU2dlevsTCwV9xw8dq34lbu2Ra+vl+VAob4uBp2wDFsACcrtOJMOkRurtodKhrNugI5tYqsxmJPvO9kMnQSBtvTRv/YUP09o8QJViGcL8XSLDpATnmdyM44ERYmUoJhyGLjqHMsMaxQQHbdyaE7JcFL3wAnorBsTHd8sLX2W0KwxkZJ1SpxsEOLICVpj4Qq7JrQE4LjMxuqL+RDQTn3iRMVXmROuc7OkATdsV1lvtEWnWvxRuSXrkWMAOuHp0nzs1UkKCPxGqu0JQh2f5dth1YHiBB3YI05EX50kXmzq1DJ+3S17ok1CXPZTsozyCZq3N+Yend0FrUCasUBZrROaYCbBMOqLkRN0x6NOOqGTzGa/CApRLpbWTwo67HPScdGIkwdz1FHUX20gJ8hKtHB/jpqAqfMxJ1ymTgfAkx7RC+lXXkkXYKbVKe6hE5fzuZFhU6aTVTuBMc+E+AdxQrPEjzkRdE+j7tG//Vb3e/xyYww86qQjBAeAZuyNV992YGgQ9+OEfcyJb8UJ548CQSgcOHBSELh0gRMbjfOhRttxdkAfplyCUvG5DHhwL7CoCfyIEy4q61xajqcFXY5Ssh/mWDTEYUtzBRtxjppn2fZIJOIs5diyfgc60aKyDLsbIS7EdQ+QG0r9Dks7jd024jkvODQe7e3tPdbXj4qMlX6n6YGT8br9HFWAIRKnPDIVl2GPDABahsOrx3oRoQ24rgBWX1JprQVqEHRz/Q+dZOqHzohCvQxr+BZj0xIDGoNUKitrLTbgGBB2v8bB2YKoYifUQK34AyeB8ExC2KxzgIsLcNNSHwNpEspT/cZeNkkxY6dDVOaEtNXVI+o8KFCY5h/ECTd1NOLUqJgeKICTAvoWEzVjtZZSX2LbRlzP1tHTs2v/gf1P9vSg6SGG8N13wkEn7huDvXuvOsQRWdZljw6TLafp6GyOOtCza9dBaVdPz0B3tY6iulRQxw4kby/fTu7Zs7x8JxmCAxdWzZT6nZRYWyfdsLd/9+/2Qcodi8LeJyZkgVbg0VL7vuTy8t1k8g7cbQdryreuVBAn/ct7rkEhy8mlu8sdaJU0S/ptTWJNnVWs8Ry1RHZ/93ZrxN7mcLvdlJsTxxtJtI6a6V1OXoNCbieTdwdZU5YoFdSxA5/anfa7n952uZZvhtCHNMDh8famiy91vfnihMV+7/vBvuOD339vt3/SdubGf043kmg6CTaxvrtO1/KdO8su+/IO1pSz1BW0nafuLi0t3bl954ul5J0OEq21gVYYvr/XFY5Ews579/779b17H8PyLHyitYNkjKENzzJ9cIdrd2/vWVpK3uZZMw4CK2g7HUdURh09NkCQyhHl0RUCasezrYdOnAjbXZYTJw619oceDvVYnhkYZRnlyJEGgm4Y3VjndxA0A1Mmg97w9eiYnzU+OIhVFaV7u6Ko6GEPfwmbGEOX3gzF8/AXvBnfClfZ2i3jo17Qd5Z/YGUlYHjGaCmlD2l7GEQsX/pgodJ7w2hTJln8OX7lYCflYCflYCflYCflYCflYCflYCfl4L+DUM6mX2IeB/9dlXJ+6j91g8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGIwZ+R8Ihj5djt400wAAAABJRU5ErkJggg=="
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://a.espncdn.com/i/headshots/rpm/players/full/4686.png" class="selfie">
+            </td>
+
+            <td> Charles Leclerc
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANUAAACqCAMAAAAN6vqlAAAABlBMVEXOESb///9W4q7JAAAAgklEQVR4nO3PAQ0AMAjAMO7fNDKekdZBZwAAAAAAAAAAAAAAAAAAAAAA4Lt3kVWHVYdVh1WHVYdVh1WHVYdVh1WHVYdVh1WHVYdVh1WHVYdVh1WHVYdVh1WHVYdVh1WHVYdVh1WHVYdVh1WHVYdVh1WHVYdVh1WHVYdVh1WHVYdVxwK36ka6L4DYvgAAAABJRU5ErkJggg=="
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://s3.glbimg.com/v1/AUTH_08fb001c60b847468664307c11fa9dc9/public/2023/2/seBl0fFMxRtuABVtKvCX.png"
+                    class="selfie">
+            </td>
+        </tr>
+
+        <tr align="center">
+            <th colspan="2">MCLAREN</th>
+            <td colspan="2">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/66/McLaren_Racing_logo.svg/2560px-McLaren_Racing_logo.svg.png"
+                    class="mclaren">
+            </td>
+
+            <th colspan="2">HASS</th>
+            <td colspan="2">
+                <img src="https://logodownload.org/wp-content/uploads/2022/03/haas-f1-team-logo-0.png" class="hass">
+        </tr>
+        <tr align="center">
+            <td> Oscar Piastri
+                <img src="data:image/png;base64,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"
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/rpm/players/full/5752.png" class="selfie">
+            </td>
+
+            <td> Lando Norris
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAACZCAMAAADXexy/AAAAYFBMVEXIEC7///8BIWnTQVnYV2z43+PPMErut8Djh5b99/j7/P2Rn74PLXELKm+AkLT4+fvm6fBfc6BOZJbAyNotR4MnQn+4wdXKGDX77/Hgd4jNJUDrp7LcZ3rnl6Tzy9H00dc6gwdOAAAEvElEQVR4nO2d6XLbMAyE6Tp3r1xtjrbJ+79lx4pVKxZEEcAumM5gf2WimORH7lqKRJHl5HSzrKvPXz5BdChyW2raHv4QU/HXb9/35T0+zas7Oy/l4eKy0gPXN5Bm9OK/vR6L+/U8q2xH/tYLlQ7Y3N0D2tGH/8fPsbBXodrB+ZMfl4QIQQ/+NesPhyZWWJY/BB34V60/5WeHIJy/wfrv+bkhCOZvsv4xPzMEsfxt1p/xE0MQyX+w/kvV+gI/LQRx/O3WF/lJIQjjV1hf5ueEIIhfZf03/vrpQZApBCH8Suu/8bcaZSJDCCL4b5TWH/kVvTVKHQI+f+sFj8Cv/MhO2hCw+S3Wn/DTQ0Dm137rT/ivbP220YWAyn9/N35G7+NizM3w4fYQEPnN1h+GsHjM0x4CHr+z9cXdg1353e4tmGL68AMGruyLIoeAwo9o88hPDgGBH+PZgi4wiB81XGVaKC8EaH5YS9/x80KA5Qc6tfCKZvFDB+mYnxQCID+2fXN+Sghg/Gh/CvyMEID48UMj8uNDgOEnRHOBH93TCH7KV/MSP7g6Pz/p1LzMD7Wbm591aVbjB/a5k593aV7lx1Xs4mf+a7bCjzKeh5/6r/kqP6b37fzkWzPr/JAmWPnpt+Za+AEWNPLzb8228bvHwcQfcWu+kd/bGAN/wF1pDb/PjAb+gKcSOn5XCPT8e5EfzWr4XSGw8dMfzev4XSEw8POnZmj53SFQ8EdMzVHze0PQzB8wK8XG7wtBM3/ArCQrvycEzfyzY5SpmaVSJkXa8x9ZyR+s5E/+5E/+5E/+5O/Pvw3WQ5X/Ibo51dakUqlUKpVKpVKpVCqVSqVSqVQqlUqlUqnU/6ToB64f7flv9AP3j/b8P7rC5E/+5E/+5E/+5E/+3vzO938knZ7MuA4H7fznZ/O///24P2h+/8fyodvrSjMvL+aX+M8IfrnkP+MCtmHvfx3e/1OPko9fdFbZvoxHQ97/U1t/0kA3Pz4E9vd/BdUNCuFHh8D6/rd6bFD84BDY3v/XNwvIDw2Baf0HQSu2NPA7amOs/+Cwvnf9D0moEKjXf7E1xsDv7XIkv8f6mPV/jPVC+AHjYOR3+w7AD2mClZ8eAsX6b4KaLWjnJ4egef0/X+97+KkhaFz/0Vuxi58Zgrb1PwXpjOfk54WgZf1XQJ+7+VkhWF//F1Kdn58UgtX1nwUZ7Ibgp4RgZf1vVE9j+AkhqK7/jqqEsv47Zmhq6/8Lsn7TwvjR7Vve/wHTv3h+rD+X9v8AFM3ihw7Swv4vglxX2lh+YEvF/X/cvUrnhzlV2P/JV2AQP2q45vt/CfLfaSHwY9p8vP+bpy+j+RGeLZhi+vADBq5E3GSM2f/R1PoScZM5aP9PSWvuLVeOD7c2MWz/V/0QVua/IJ+0Uvk9IVjmhz5pJ/PbQ7DED55pweY3nwlkfvhMGz7/dP93BZHIj59pFcFvCoHAj59kFMRvCcGMnzHJLIzfcCZo6CP3JMNAfnUIVg77rR/Mrw3Bij381g/n14VguWd2Ali/A78mBOIvx9YgrN+DXxEC0RSDQNbvw98cguP++CeU9XvxN4Zgw7Z+N/62ENCtP6gPf0sIJOs/Ia0/qBf/agj+AoTe43JUadxpAAAAAElFTkSuQmCC"
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://cdn.racingnews365.com/Riders/Norris/_570x570_crop_center-center_none/f1_2023_ln_mcl_lg.png?v=1677515203"
+                    class="selfie">
+            </td>
+
+            <td> Nico Hulkenberg
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAGFBMVEUAAAD+AAD/zAAqAAP9yAH9zQL2AgD8KwBigjgcAAABCUlEQVR4nO3SsRGEAAzAsPDAs//G9HFFL43g8wwAAAAAAAAAAAAAAAAAAADARyfb/NnmYNOkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0qXnY5mKbH9vcbD4pTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClN6gU4m9j/vkrH4gAAAABJRU5ErkJggg=="
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://cdn.racingnews365.com/Riders/Hulkenberg/_570x570_crop_center-center_none/f1_2023_nh_haa_lg.png?v=1677516393"
+                    class="selfie">
+            </td>
+
+            <td> Kevin Magnussen
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAACqCAMAAABs8tjnAAAAFVBMVEXIEC7////QM0zKFzTZWG3RN1DecII1B0CYAAAA9UlEQVR4nO3YyQ0DMQwEQfnMP+SNQB+DgFV2VwJkf2etIY/bxnPqwrdV6KvQV6GvQl+Fvgp9Ffoq9FXoq9BXoa9CX4W+Cn0V+ir0Veir0Fehr0Jfhb4KfRX6KvRV6KvQV6GvQl+Fvgp9Ffoq9FXoq9BXoe/cwvuQ167wPXXhQ2v32M+o0Fehr0Jfhb4KfRX6KvRV6KvQV6GvQt8fFE4Nr+cuwlPOXfWnVOir0Fehr0Jfhb4KfRX6KvRV6KvQV6GvQl+Fvgp9Ffoq9FXoq9BXoa9CX4W+Cn0V+ir0Veir0Fehr0Jfhb4KfRX6KvRV6KvQV6Hv2MILVGwp62q9uecAAAAASUVORK5CYII="
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://cdn.racingnews365.com/Riders/Magnussen/_570x570_crop_center-center_none/f1_2023_km_haa_lg.png?v=1677516326"
+                    class="selfie">
+            </td>
+        </tr>
+
+        <tr align="center">
+            <th colspan="2">ALFA ROMEO</th>
+            <td colspan="2">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/5/5a/Logotipo_da_Alfa_Romeo.png" class="alfa">
+            </td>
+
+            <th colspan="2">ALPINE</th>
+            <td colspan="2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Alpine_F1_Team_Logo.svg/1117px-Alpine_F1_Team_Logo.svg.png"
+                    class="alpine">
+        </tr>
+        <tr align="center">
+            <td> Valtteri Bottas
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAACcCAMAAACHto0MAAAAFVBMVEX///8AL2y5xtfU3Oaqus6arcV8lLP059G3AAAA7ElEQVR4nO3ayZEDMQwEwdGx8t9kuTAPMChuZTmAzj+ua6TX43bvmYu/FT8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/P//urSvi5+fn5+fn5+fn5+fn5+fn5+fn5+fn3711Rfz8/Pz8/Pz85/ifI/3d939mLg513R/+L+Nvx9+Ovx1/O/52/O342/G342/H346/HX87/nb87fjb8bfjb8ffjr8df7u8f+aN9Nz/15nO/X+eiZ+fn5+fn5+fn5+fn5+fn5+fn5+fn3/31hXx8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz7966In5+fn5+fn7+Y/xffCNC/aZvXt4AAAAASUVORK5CYII="
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://cdn.racingnews365.com/Riders/Bottas/_570x570_crop_center-center_none/f1_2023_vb_alf_lg.png?v=1677515876"
+                    class="selfie">
+            </td>
+
+            <td> Guanyu Zhou
+                <img src="https://static.significados.com.br/foto/china.jpg" class="bandeira">
+            </td>
+            <td>
+                <img src="https://cdn.racingnews365.com/Riders/Zhou/_570x570_crop_center-center_none/f1_2023_gz_alf_lg.png?v=1677516017"
+                    class="selfie">
+            </td>
+
+            <td> Esteban Ocon
+                <img src="https://static.todamateria.com.br/upload/fr/an/frana_a.jpg" class="bandeira">
+            </td>
+            <td>
+                <img src="https://www.gpemcasa.com.br/img/pilotos/ocon1.png" class="selfie">
+            </td>
+
+            <td> Pierre Gasly
+                <img src="https://static.todamateria.com.br/upload/fr/an/frana_a.jpg" class="bandeira">
+            </td>
+            <td>
+                <img src="https://cdn.racingnews365.com/Riders/Gasly/_570x570_crop_center-center_none/f1_2023_pg_apn_lg.png?v=1677515224"
+                    class="selfie">
+            </td>
+        </tr>
+
+        <tr align="center">
+            <th colspan="2">ALPHATAURI</th>
+            <td colspan="2">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Scuderia_Alpha-Tauri.svg/1200px-Scuderia_Alpha-Tauri.svg.png"
+                    class="alpha">
+            </td>
+
+            <th colspan="2">WILLIAMS</th>
+            <td colspan="2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Logo_Williams_F1.png" class="williams">
+        </tr>
+        <tr align="center">
+            <td> Yuki Tsunoda
+                <img src="https://s4.static.brasilescola.uol.com.br/be/2022/11/bandeira-do-japao.jpg" class="bandeira">
+            </td>
+            <td>
+                <img src="https://cdn.racingnews365.com/Riders/Tsunoda/_570x570_crop_center-center_none/f1_2023_yt_alp_lg.png?v=1677516211"
+                    class="selfie">
+            </td>
+
+            <td> Nyck de Vries
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAElBMVEWuHCj///8hRouuGSb99/j3+fxjPD24AAABC0lEQVR4nO3RsQ2DABDAwCfA/iunf0u0UNyNYM8AAAAAAAAAAAAAAAAAAAAAj062t5d80sU2B5smpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUpqUJqVJaVKalCalSc3NNj82TUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDSpP0Blz1R39PPpAAAAAElFTkSuQmCC"
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/rpm/players/full/5718.png" class="selfie">
+            </td>
+
+            <td> Alexander Albon
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/255px-Flag_of_Thailand.svg.png"
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://www.gpemcasa.com.br/img/pilotos/albon1.png" class="selfie">
+            </td>
+
+            <td> Logan Sargeant
+                <img src="https://s3.static.brasilescola.uol.com.br/be/conteudo/images/estados-unidos.jpg"
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://cdn.racingnews365.com/Riders/Sargeant/_570x570_crop_center-center_none/f1_2023_ls_wil_lg.png?v=1677517027"
+                    class="selfie">
+            </td>
+        </tr>
+
+        <tr align="center">
+            <th colspan="2">REDBULL</th>
+            <td colspan="2">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/red-bull-logo-png-transparent.png" class="red">
+            </td>
+            <th colspan="2">ASTON MARTIN</th>
+            <td colspan="2">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/7/75/Logotipo_da_Aston_Martin_Racing.png"
+                    class="aston">
+            </td>
+        </tr>
+
+        <tr align="center">
+            <td> Max Verstappen
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAElBMVEWuHCj///8hRouuGSb99/j3+fxjPD24AAABC0lEQVR4nO3RsQ2DABDAwCfA/iunf0u0UNyNYM8AAAAAAAAAAAAAAAAAAAAAj062t5d80sU2B5smpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUpqUJqVJaVKalCalSc3NNj82TUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDSpP0Blz1R39PPpAAAAAElFTkSuQmCC"
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/rpm/players/full/4665.png" class="selfie">
+            </td>
+
+            <td> Sergio Pérez
+                <img src="https://s3.static.brasilescola.uol.com.br/be/2022/02/bandeira-do-mexico.jpg" class="bandeira">
+            </td>
+            <td>
+                <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/rpm/players/full/4472.png&w=350&h=254"
+                    class="selfie">
+            </td>
+            <td>Fernando Alonso
+                <img src="data:image/png;base64,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"
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://www.gpemcasa.com.br/img/pilotos/alonso.png" class="selfie">
+            </td>
+            <td>Lance Stroll
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATEAAACZCAMAAABwg/1tAAAAe1BMVEXVKx7////0ysf++/vaQjfXNyria2L31dLYOS3WMCP++PjZPTH429nrnJb98/Pwsq3pkIntpJ787uzqlpDzxMDbSj/fX1XlfHT5393cT0T65+X1z8zaRjvuqaTkeXHmgXreV03yvLjvrqn0x8TibmXniIHyv7vgY1ndVUqxpEbeAAAGn0lEQVR4nO2d6ZqqMAyGYVAcRFHcRnHD2e//Cg8FVJAU2hqd07TfPxRSeZ+CTZqmjoOokft/aoR5k6h6+Ws0HL38NRiuLDFZWWKyssRkZYnJyhKTlSUmK0tMVpaYrCwxWVlissIkNkS0ZQQxz/fwjBlB7N15xzNmAjFv5+zwOpkJxPaZtT2aNQOIZV3McXpoL38DiMW5uRjLHH1iw15uDq2T0ScWl/awOhl5YmUXc5wQqZORJza+GETqZNSJDcOLwTBCsUid2LhicYxikTixKKxYxOlkxInNayZROhltYtFrzeQrRiejRWx9k6wxv7E5r389WhtPLAmOs8rhTRdznH61k0XTIDGemBs6r/E1sDNtGL12Mm8SOqFKE8SI/WQXLhflQaOLZZ3s3AVfNtmRb4mVvcpPKgd1TfNvkkPlwGxip+LaYJo5kUkfsNrPYA6nQXFwssTc9fnq3ni/BM0u9+Ozb+6o/FVSI+ZC/YqnvlIL1IitJFpYWWKZviRa+LLEMk0kWphYYq5c7rha/js1Yl4g3ECgNutLjZibCjeQqjVAjthRuIGjJZZrL9yAYmIBOWID4QYGlliuoeirP1CcvyRHzN0I2t8o2qdH7CBo/2CJlYq7TedSnSInQMyrezuid1S3PxEezhIgNqlnuUaC9qO6DWEnkwCx1AlO1WM4knirZfWS70A89KM/MTYAC6onfwqZ/6xcsWVxSNHhmf7E3tjJ/cr9jrss56pkFIzyOac3isTWs+Zns2LEGl5j9gsh84ur1SKbJYCMAzMBWhHbOz1//lEfq597VO8yvz0TMn/hk+zKT+p5LN4gPmwg31MrYgWLYHOIB+fBgHe+X2d5YdDj2ryqd7F58RGuqySSydeq6LpAmoFWxCrzHv2f6YndTmW8mp7HC76A9fN0eJReP2Nj2uQ0/bnOR0F/oHoRuxnP9/za1NGqfF5vM3oglQkYw7oB/6Z7Qn6BXsSS9kvKJW4nAeun/EyvYyQC5f7oRcxN2685eAJccxUs3tpPAuPamhHrGmsVU5Bhx1lOmQfVNbkJZoFqRmzddVX+ftp1nVX4SJ3vOzAvQzNi3fHC7GX9IWD9QyAsBMccdSPW/T+Y+iJx68BPO8+Zg79AN2LPrJcGz5nrRkwwloOhJfwDtCMGpWo+RpycT+2Iic9H3itOwEw7YgJDBxztOO3rR0wmp+4e8fLx9CO2fVL7WzLEPJHw1/3q8abj9COWrwt5vLjrSfQjFnX72RjiLl/VjthCNBPlXm0W8A/Qi5j3nT7xF2zA1AKdiHmT57lIhXZxM8lMI2Lb57zA6gobgwyNiLl78cxzLAXNMKxOxNxFc4npY9X/1vs95rrrZ/1RFlpCYWu9iLmRWOIOjnxwSKYZMdHMHQxNYT9JO2LuSWbRqboCXtKifsTc0TMiZD1uAp6GxNzZ433xFZBMpjEx13t0sP/YknmtJbEHD2aD1lR/TYk90mUK21vWlZibpA9q97ej/JG2xNyh6AIkOR26lsTpS+whLzPA86ZEDN8zhzxvUsSwPXPQ86ZFDNczhz1vYsQwPXOO502OGJZnzvW86RHD8cz5njdBYhieeYvnTZHY/Z55m+dNktidg9l2z5sosXs88+aUpBHE7kgrkwNGh5ir+lwGku2QIaae6C9Z6o4MMfW/S8nKw1SI3ZHryc3fpE1MZPUWTx9GEutYW9oq0UoXpIgNOe746+p4LHcxOx5XnABkX6p2GxFizcK5weYwXuSTHEPmdv7kVJLF+LBpDkOkSukSIVYr2LDzp5NR5XXOFv5WoqveaDL1a/EOqZ0NaBArS9Gwh3C/bUZS+0CZ9Gi7vzymUAEa4sTi7CH8nH/zZhoD7sA+2sbHVSBV744GscGobUzlZdZavx/JFDqlQaxdrNyPzHPXLhOIsYohKjsjwTKBGHPS1SrLQzKBGAudSQbBWmQCMVb0jrMsS0EmEGO1ok5o1kwg9p5Ze+8+TVAmEGMFetA2YDeCGKv1A9fgUZEJxFi9B6VN8UCZQIxtPaK4qQggE4ixhFnVavxNmUCMBc+UNvcEZQIxVsFUbVc8SCYQ+82s/aJZM4EYq2DAKb+mIBOIsbQfpW2dQZlAjE0CqO2HCskAYl5uTm0jQUAGECu2ahHK1ReRAcSKMtdoYWsDiBWZZWhhawOIFfmeaGFrA4gViVJyKU8tMoBYscHBCcucAcRmAya0KV4DiCHLEpOVJSYrS0xWlpisLDFZWWKyssRkZYnJyhKT1f9LDC+rEFeo+w/9AzE7bIde3gOvAAAAAElFTkSuQmCC"
+                    class="bandeira">
+            </td>
+            <td>
+                <img src="https://cdn.racingnews365.com/Riders/Stroll/_570x570_crop_center-center_none/f1_2023_ls_ast_lg.png?v=1677515973"
+                    class="selfie">
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+    <table class="table3" border="1">
+        <tr>
+            <th class="sis" colspan="3">Sistema de Pontuação</th>
+        </tr>
+        <tr>
+            <td align="center">1°</td>
+            <td align="center">25</td>
+        </tr>
+        <tr>
+            <td align="center">2°</td>
+            <td align="center">18</td>
+        </tr>
+        <tr>
+            <td align="center">3°</td>
+            <td align="center">15</td>
+        </tr>
+        <tr>
+            <td align="center">4°</td>
+            <td align="center">12</td>
+        </tr>
+        <tr>
+            <td align="center">5°</td>
+            <td align="center">10</td>
+        </tr>
+        <tr>
+            <td align="center">6°</td>
+            <td align="center">8</td>
+        </tr>
+        <tr>
+            <td align="center">7°</td>
+            <td align="center">6</td>
+        </tr>
+        <tr>
+            <td align="center">8°</td>
+            <td align="center">4</td>
+        </tr>
+        <tr>
+            <td align="center">9°</td>
+            <td align="center">2</td>
+        </tr>
+        <tr>
+            <td align="center">10°</td>
+            <td align="center">1</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+    <table class="table2" border="1">
+        <tr>
+            <th class="gp" colspan="3">GP BAHREIN</th>
+        </tr>
+        <tr>
+            <th colspan="">Posição</th>
+            <th>Pilotos</th>
+            <th>Pontos</th>
+        </tr>
+        <tr>
+            <td align="center">1°</td>
+
+            <th>
+                <img class="rbr" src="https://cdn.freebiesupply.com/logos/large/2x/red-bull-logo-png-transparent.png">
+                <div class="pilotos">
+                    Max Verstappen
+                </div>
+            </th>
+
+            <td align="center">25</td>
+        </tr>
+        <tr>
+            <td align="center">2°</td>
+
+            <th>
+                <img class="rbr" src="https://cdn.freebiesupply.com/logos/large/2x/red-bull-logo-png-transparent.png">
+                <div class="pilotos">
+                    Sergio Perez
+                </div>
+            </th>
+
+            <td align="center">18</td>
+        </tr>
+        <tr>
+            <td align="center">3°</td>
+
+            <th>
+                <img class="astonn"
+                    src="https://upload.wikimedia.org/wikipedia/pt/7/75/Logotipo_da_Aston_Martin_Racing.png">
+                <div class="asto">
+                    Fernando Alonso
+                </div>
+            </th>
+
+            <td align="center">15</td>
+        </tr>
+        <tr>
+            <td align="center">4°</td>
+
+            <th>
+                <img class="ferr" src="https://logos-world.net/wp-content/uploads/2020/07/Ferrari-Scuderia-Logo.png">
+                <div class="fer">
+                    Carlos Sainz Jr.
+                </div>
+            </th>
+
+            <td align="center">23</td>
+        </tr>
+        <tr>
+            <td align="center">5°</td>
+
+            <th>
+                <img class="meca"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mercedes_AMG_Petronas_F1_Logo.svg/2560px-Mercedes_AMG_Petronas_F1_Logo.svg.png">
+                <div class="merc">
+                    Lewis Hamilton
+                </div>
+            </th>
+
+            <td align="center">10</td>
+        </tr>
+        <tr>
+            <td align="center">6°</td>
+
+            <th>
+                <img class="astonn"
+                    src="https://upload.wikimedia.org/wikipedia/pt/7/75/Logotipo_da_Aston_Martin_Racing.png">
+                <div class="asto">
+                    Lance Stroll
+                </div>
+            </th>
+
+            <td align="center">8</td>
+        </tr>
+        <tr>
+            <td align="center">7°</td>
+
+            <th>
+                <img class="meca"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mercedes_AMG_Petronas_F1_Logo.svg/2560px-Mercedes_AMG_Petronas_F1_Logo.svg.png">
+                <div class="merc">
+                    George Russell
+                </div>
+            </th>
+
+            <td align="center">6</td>
+        </tr>
+        <tr>
+            <td align="center">8°</td>
+
+            <th>
+                <img class="alf" src="https://upload.wikimedia.org/wikipedia/pt/5/5a/Logotipo_da_Alfa_Romeo.png">
+                <div class="alff">
+                    Valtteri Bottas
+                </div>
+            </th>
+
+            <td align="center">4</td>
+        </tr>
+        <tr>
+            <td align="center">9°</td>
+
+            <th>
+                <img class="alp"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Alpine_F1_Team_Logo.svg/1117px-Alpine_F1_Team_Logo.svg.png">
+                <div class="alpi">
+                    Pierre Gasly
+                </div>
+            </th>
+
+            <td align="center">2</td>
+        </tr>
+        <tr>
+            <td align="center">10°</td>
+
+            <th>
+                <img class="will" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Logo_Williams_F1.png">
+                <div class="willi">
+                    Alexander Albon
+                </div>
+            </th>
+
+            <td align="center">1</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+    <table class="table4" border="1">
+        <tr>
+            <th class="gp" colspan="3">GP ARABIA SAUDITA</th>
+        </tr>
+        <tr>
+            <th colspan="">Posição</th>
+            <th>Pilotos</th>
+            <th>Pontos</th>
+        </tr>
+        <tr>
+            <td align="center">1°</td>
+
+            <th>
+                <img class="rbr" src="https://cdn.freebiesupply.com/logos/large/2x/red-bull-logo-png-transparent.png">
+                <div class="pilotos">
+                    Sergio Perez
+                </div>
+            </th>
+
+            <td align="center">25</td>
+        </tr>
+        <tr>
+            <td align="center">2°</td>
+
+            <th>
+                <img class="rbr" src="https://cdn.freebiesupply.com/logos/large/2x/red-bull-logo-png-transparent.png">
+                <div class="pilotos">
+                    Max Verstappen
+                </div>
+            </th>
+
+            <td align="center">18</td>
+        </tr>
+        <tr>
+            <td align="center">3°</td>
+
+            <th>
+                <img class="astonn"
+                    src="https://upload.wikimedia.org/wikipedia/pt/7/75/Logotipo_da_Aston_Martin_Racing.png">
+                <div class="asto">
+                    Fernando Alonso
+                </div>
+            </th>
+
+            <td align="center">15</td>
+        </tr>
+        <tr>
+            <td align="center">4°</td>
+
+            <th>
+                <img class="meca"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mercedes_AMG_Petronas_F1_Logo.svg/2560px-Mercedes_AMG_Petronas_F1_Logo.svg.png">
+                <div class="merc">
+                    George Russell
+                </div>
+            </th>
+
+            <td align="center">23</td>
+        </tr>
+        <tr>
+            <td align="center">5°</td>
+
+            <th>
+                <img class="meca"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mercedes_AMG_Petronas_F1_Logo.svg/2560px-Mercedes_AMG_Petronas_F1_Logo.svg.png">
+                <div class="merc">
+                    Lewis Hamilton
+                </div>
+            </th>
+
+            <td align="center">10</td>
+        </tr>
+        <tr>
+            <td align="center">6°</td>
+
+            <th>
+                <img class="ferr" src="https://logos-world.net/wp-content/uploads/2020/07/Ferrari-Scuderia-Logo.png">
+                <div class="fer">
+                    Carlos Sainz Jr.
+                </div>
+            </th>
+
+            <td align="center">8</td>
+        </tr>
+        <tr>
+            <td align="center">7°</td>
+
+            <th>
+                <img class="ferr" src="https://logos-world.net/wp-content/uploads/2020/07/Ferrari-Scuderia-Logo.png">
+                <div class="fer">
+                    Charles Leclerc
+                </div>
+            </th>
+
+            <td align="center">6</td>
+        </tr>
+        <tr>
+            <td align="center">8°</td>
+
+            <th>
+                <img class="alp"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Alpine_F1_Team_Logo.svg/1117px-Alpine_F1_Team_Logo.svg.png">
+                <div class="alpi">
+                    Esteban Ocon
+                </div>
+            </th>
+
+            <td align="center">4</td>
+        </tr>
+        <tr>
+            <td align="center">9°</td>
+
+            <th>
+                <img class="alp"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Alpine_F1_Team_Logo.svg/1117px-Alpine_F1_Team_Logo.svg.png">
+                <div class="alpi">
+                    Pierre Gasly
+                </div>
+            </th>
+
+            <td align="center">2</td>
+        </tr>
+        <tr>
+            <td align="center">10°</td>
+
+            <th>
+                <img class="ha" src="https://logodownload.org/wp-content/uploads/2022/03/haas-f1-team-logo-0.png">
+                <div class="has">
+                    Kevin Magnussen
+                </div>
+            </th>
+
+            <td align="center">1</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <table class="table5" border="1">
+        <tr>
+            <th class="gp" colspan="3">GP AUSTRÁLIA</th>
+        </tr>
+        <tr>
+            <th colspan="">Posição</th>
+            <th>Pilotos</th>
+            <th>Pontos</th>
+        </tr>
+        <tr>
+            <td align="center">1°</td>
+
+            <th>
+                <img class="rbr" src="https://cdn.freebiesupply.com/logos/large/2x/red-bull-logo-png-transparent.png">
+                <div class="pilotos">
+                    Max Verstappen
+                </div>
+            </th>
+
+            <td align="center">25</td>
+        </tr>
+        <tr>
+            <td align="center">2°</td>
+
+            <th>
+                <img class="meca"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mercedes_AMG_Petronas_F1_Logo.svg/2560px-Mercedes_AMG_Petronas_F1_Logo.svg.png">
+                <div class="merc">
+                    Lewis Hamilton
+                </div>
+            </th>
+
+            <td align="center">18</td>
+        </tr>
+        <tr>
+            <td align="center">3°</td>
+
+            <th>
+                <img class="astonn"
+                    src="https://upload.wikimedia.org/wikipedia/pt/7/75/Logotipo_da_Aston_Martin_Racing.png">
+                <div class="asto">
+                    Fernando Alonso
+                </div>
+            </th>
+
+            <td align="center">15</td>
+        </tr>
+        <tr>
+            <td align="center">4°</td>
+
+            <th>
+                <img class="astonn"
+                    src="https://upload.wikimedia.org/wikipedia/pt/7/75/Logotipo_da_Aston_Martin_Racing.png">
+                <div class="asto">
+                    Lance Stroll
+                </div>
+            </th>
+
+            <td align="center">23</td>
+        </tr>
+        <tr>
+            <td align="center">5°</td>
+
+            <th>
+                <img class="rbr" src="https://cdn.freebiesupply.com/logos/large/2x/red-bull-logo-png-transparent.png">
+                <div class="pilotos">
+                    Sergio Perez
+                </div>
+            </th>
+
+            <td align="center">10</td>
+        </tr>
+        <tr>
+            <td align="center">6°</td>
+
+            <th>
+                <img class="mc"
+                    src="https://pt.smartsheet.com/sites/default/files/2022-06/McL-Smar-logo-tertiary-color-stacked.png">
+                <div class="mcc">
+                    Lando Norris
+                </div>
+            </th>
+
+            <td align="center">8</td>
+        </tr>
+        <tr>
+            <td align="center">7°</td>
+
+            <th>
+                <img class="ha" src="https://logodownload.org/wp-content/uploads/2022/03/haas-f1-team-logo-0.png">
+                <div class="has">
+                    Nico Hulkenberg
+                </div>
+            </th>
+
+            <td align="center">6</td>
+        </tr>
+        <tr>
+            <td align="center">8°</td>
+
+            <th>
+                <img class="ha" src="https://logodownload.org/wp-content/uploads/2022/03/haas-f1-team-logo-0.png">
+                <div class="has">
+                    Oscar Piastri
+                </div>
+            </th>
+
+            <td align="center">4</td>
+        </tr>
+        <tr>
+            <td align="center">9°</td>
+
+            <th>
+                <img class="alf" src="https://upload.wikimedia.org/wikipedia/pt/5/5a/Logotipo_da_Alfa_Romeo.png">
+                <div class="alff">
+                    Guanyu Zhou
+                </div>
+            </th>
+
+            <td align="center">2</td>
+        </tr>
+        <tr>
+            <td align="center">10°</td>
+
+            <th>
+                <img class="al"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Scuderia_Alpha-Tauri.svg/1200px-Scuderia_Alpha-Tauri.svg.png">
+                <div class="all">
+                    Yuki Tsunoda
+                </div>
+            </th>
+
+            <td align="center">1</td>
+</body>
+
+</html>
